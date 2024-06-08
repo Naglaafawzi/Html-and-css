@@ -1,0 +1,104 @@
+  <!-- form tag has action attr for do action after submit like go to another page 
+     method attr way to get or post data -->
+
+<form action="./Tabels.html" method="post">
+    <!-- label to wite text describe thw input filed attrub for to 
+-->
+<fieldset>
+<label for="">Name:</label>
+<!-- attr name is very important to send data 
+because that the key that tou take from backend 
+
+-->
+<input type="text" name="name" placeholder="name" >
+<!-- filed to write password -->
+<br>
+password:
+<input type="password" name="password"  minlength="10" maxlength="25" >
+<!-- check box using to chek more than one choice if the 
+    the group related to other 
+    لو هما مجموعه ليهم علاقه ببعص زي المثال اللي تحت لازم نخلي اسمهم ارري (array)
+    ولازم نحدد القيمه لكل واحد
+ -->
+<input type="checkbox" name="FavSub[]" value="html">html
+<input type="checkbox" name="FavSub[]" value="css" id="">Css
+<input type="checkbox" name="FavSub[]" value="js" id="">Js
+<br>
+<!-- هنابقي مش مهم نحدد القيمه لان ال 
+    browser will send it like that: codations=on
+ -->
+<input type="checkbox" name="codations"  id=""> i agree all codations
+<br>
+<!-- here we have to wite the same to send one choice -->
+<input type=" radio " name="language" value="english">English
+<input type=" radio " name="language" value="germany">Deutsch
+<input type=" radio " name="language" value="spanish"> Spanis
+<!-- here we have to wite attru name to tag select and attr value to every tag option -->
+<select name="courties
+" id="" disabled="disabled" multiple>
+<optgroup> africa
+    
+</optgroup>
+<option value="c"> egypt</option>
+    <option value="c"> sauid</option>
+    <option value="c"> kwait</option>
+<optgroup> africa
+    <option value="c"> egypt</option>
+    <option value="c"> sauid</option>
+    <option value="c"> kwait</option>
+</optgroup>
+</select>
+<br>
+<!-- text aree to write something and also must have attr name-->
+<textarea name="comment" rows="3" cols="3"></textarea>
+</fieldset>
+
+<!-- atrr accesskey and tabindex 
+accesskey:
+من الاخر هي جوبال اتربيوت وهي بحطها عل ياي عنصر واحدد حرف كاختصار لما ادوس الalt+الحرف ده
+بيفذه 
+tabindex:
+ tab لما ادوس
+بقدر اختصار ترتيب ااتنقفل ما بينهم
+-->
+
+<!-- all that will submit the form their fiffence in appearence -->
+<input type="submit">
+<input type="image" tabindex="2" accesskey="i" src="" alt="">
+<button >Submit</button>
+<button type="submit"> subnit</button>
+<!--will not submit the form -->
+<input type="button" > send
+    
+    <input type="button"  value="send">
+<input type="checkbox" value="html"> html
+
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="month">
+<input type="number" name="">
+<input type="password">
+
+<input type="range" value=100>
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text" tabindex="1">1
+<input type="text" tabindex="-1">-1
+
+<input type="text" tabindex="3">3
+<input type="text" tabindex="0">0
+<input type="text" tabindex="2">2
+<input type="time">
+<input type="url">
+<input type="week">
+<input type="text" tabindex="1">1
+<a href="#" accesskey="h">Home</a>
+<button accesskey="w">www</button>
+
+</form>
